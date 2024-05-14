@@ -1,0 +1,36 @@
+/*  HTML id = # CSS (só pode em 1 elemento por página)
+    HTML class = . CSS (pode vários)
+*/
+
+/* o id sobrepõe o class, que sobrepõe a tag, anulando apenas a propriedade declarada */
+
+body {
+    background-color: #77bbc4;
+}
+
+h1, h2 {
+    color: #357B85;
+}
+
+
+h1#principal {
+    text-align: center;
+    color: white;
+    background-color: #314E52;
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: yellow;
+}

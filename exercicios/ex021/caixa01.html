@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level (display: block) */
+            text-align: center;
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border: 10px solid black;
+            padding: 10px;
+            margin: 400px auto 10px auto; /* ou somente "auto" Para centralizar o elemento verticalmente */
+            outline: 50px dashed blue;
+        }
+
+        a { /* inline-level (display: inline) */
+            display: block; /* Para modificar o display padrão */
+            border: 5px double red;
+        }
+    </style>
+</head>
+<body>
+    <!-- user agent: configurações/estilos definidos pelo navegador -->
+    <!-- Dá para alterar/desabilitar coisas no DevTools para auxiliar -->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

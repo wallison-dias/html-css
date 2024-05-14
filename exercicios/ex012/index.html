@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <!-- Acima de 1080px, nada de hospedar no próprio site, pois o cliente paga pelo uso de banda de cada usuário, então se 1000 clientes acessam um vídeo de 11MB, o seu cliente pagará 11GB no plano de dados, é melhor conscientizá-lo a usar vídeo externo -->
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <!-- <video src="" controls></video> Maneira simples -->
+    <video width="500" poster="imagens/paisagem-capa.jpg" controls loop> <!-- Recomendado --> <!-- Autoplay só funciona se usar muted como atributo também -->
+        <!-- Melhor organizar do menor pro maior, já que o site segue essa ordem-->
+        <source src="midia/meu-video.mkv" type="video/mp4"> <!-- Mais recomendado é esse -->
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>    
+    </video>
+
+    <h1>Vídeos externos</h1>
+    <h2>YouTube</h2> <!-- Pode usar em sites dos clientes, porém tendo consciência de que não é tão profissional quanto o Vimeo, e que todo mundo consegue ver ao ser público, e não listado conseguem distribuir mesmo assim. -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=gsk44THNx8sOOkbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/29844795?h=f0a1764666&autoplay=1&loop=1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
