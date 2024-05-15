@@ -3,4 +3,4 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
-<a href="https://wallison-dias.github.io/html-css/exercicios/ex001/index.html">Executar o exercício 1</a>
+<a href="https://wallison-dias.github.io/projeto-android/">Ver meu projeto 1, com ajuda do Guanabara</a>
