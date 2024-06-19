@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+main {
+    /* Como o position relative deixa o espaço do "margin" separado para ele, o child absolute (red) terá a área main como base */
+    position: relative;
+    margin: 100px;
+    background-color: yellow;
+}
+
+section {
+    height: 100px;
+    width: 100px;
+}
+
+.red {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.green {
+    background-color: green;
+    position: relative;
+    left: 100px;
+}
+
+.blue {
+    background-color: blue;
+}
