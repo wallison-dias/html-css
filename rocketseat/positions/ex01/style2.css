@@ -11,6 +11,7 @@ main {
     position: relative;
     margin: 100px;
     background-color: yellow;
+    height: 500px;
 }
 
 section {
@@ -32,5 +33,8 @@ section {
 }
 
 .blue {
+    position: fixed;
     background-color: blue;
+    top: 0;
+    
 }

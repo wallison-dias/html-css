@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+section {
+    height: 100px;
+    width: 100px;
+}
+
+/* A ordem das camadas é feita ao ser apresentada no HTML, de baixo para cima */
+/* Porém eu inverti, através do z-index */
+
+.red {
+    background-color: red;   
+    position: relative; 
+    z-index: 2;
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    /* Para sobrepor os outros elementos, basta que o z-index seja maior que o padrão (0) */
+    z-index: 1;
+}
+
+.blue {
+    background-color: blue;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}

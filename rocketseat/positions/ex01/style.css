@@ -16,7 +16,7 @@ section {
     width: 200px;
 }
 
-.vermelho {
+.red {
     background-color: red;
     /* Deixa seu espaço reservado: */
     position: relative;
@@ -24,13 +24,13 @@ section {
     left: 200px;
 }
 
-.verde {
+.green {
     background-color: green;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.azul {
+.blue {
     background-color: blue;
 }

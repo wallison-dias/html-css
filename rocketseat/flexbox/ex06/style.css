@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+aside {
+    background-color: darkred;
+    flex: 1;
+}
+
+div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(1) {
+    background-color: darkslategray;
+    flex: 2;
+}
+
+section:nth-child(2) {
+    background-color: darkkhaki;
+    flex: 1;
+}
+
+section:nth-child(3) {
+    background-color: darkmagenta;
+    flex: 4;
+}
